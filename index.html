@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Smart Partner FZE
+	</title>
+
+	<link rel="icon" href="img/favicon.ico">
+  <link  href="http://fonts.googleapis.com/css?family=Reenie+Beanie:regular" rel="stylesheet" type="text/css"> 
+<style type="text/css">
+.body{display: block;}
+@font-face {
+    font-family: "Awesome";
+    src: url("fonts/awesome.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: "GasparItalic";
+    src: url("fonts/Gaspar_Bold_Italic.otf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: "GasparBold";
+    src: url("fonts/Gaspar_Regular.otf") /* TTF file for CSS3 browsers */
+}
+ul,li{list-style:none;}
+ul{overflow:hidden;padding:3em;}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+ul li{
+  float:left;
+}
+ul li h2{
+  font-size:140%;
+  font-weight:bold;}
+ul li p{
+  font-size:180%;
+}
+ul li a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+.name{
+font-family: 'GasparItalic', Arial, sans-serif;
+	font-size: 500%;
+}
+.logo {
+	width: 150px;
+	height: 100px;
+}
+#app{
+	padding: 0;
+	display: flex;
+}
+.header{
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: #5580E9;
+  height: 20%;
+  border-radius: 1%;
+}
+@media screen and (max-width: 750px) {
+.header{
+font-size: 100%;
+}
+  .name{
+    font-size: 30px;
+  }
+  .logo {
+    width: 75px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+ul li h2{
+  font-size:30%;
+  font-weight:bold;}
+ul li p{
+  font-family:"Reenie Beanie";
+  font-size:70%;
+}
+ul{overflow:hidden;padding:1em;}
+ul li a{
+  margin-left: 0px;
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:80%;
+  width:100%;
+  padding:3%;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+ul li{
+  float:left;
+}
+ul li h2{
+  font-size:100%;
+  font-weight:bold;}
+ul li p{
+  font-family:"Reenie Beanie";
+  font-size:110%;
+}
+#app{
+  display: inline-block;
+}
+.product{
+  width:75px;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: relative;
+    right: 10;
+    top: 10;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+}
+/* Default values*/
+.content{
+  font-family: "GasparItalic", Arial, sans-serif;
+  padding: 5%;
+	width: 80%;
+}
+.element{
+  margin: 10px;
+  font-family: "GasparBold", sans-serif;
+  font-size: 300%;
+}
+.element-italic{
+  margin: 10px;
+  font-family: "GasparItalic", sans-serif;
+  font-size: 300%;
+}
+.product
+{
+	width:90%;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.icon {
+  position: relative;
+  top: 10px;
+  right: 10px
+}
+	</style>
+	<script type="text/javascript" src="js/vue.min.js"></script>
+	<script type="text/javascript" src="js/vue-router.js"></script>
+   <script type="text/javascript">
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  var i= document.getElementById("myText")
+  if (x.className === "topnav") {
+    x.className += " responsive";
+
+  } else {
+    x.className = "topnav";
+  }
+}
+      </script>
+</head>
+<body>
+	<div class="header">
+		<img src="img/logo.png" style="float: left;" class="logo">
+		<img src="img/logo.png" style="float: right;" class="logo">
+    <center>
+		<h1  class="name">SMART PARTNER FZE</h1>
+    </center>
+	</div>
+	<div id ="app">
+  <div class="topnav" id="myTopnav">
+          <router-link class="menu-link" to ="/main">Main</router-link>
+            <router-link class="menu-link" to ="/about">About</router-link>
+            <router-link class="menu-link" to ="/products">Products</router-link>
+            <router-link class="menu-link" to ="/services">Services</router-link>
+            <router-link class="menu-link" to ="/contacts">Contacts</router-link>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <p id="myText" style="font-size: 50%; margin:3px; ">||||</p>
+  </a>
+</div>
+		<div class="content">
+         <router-view>
+         	Welcome
+         </router-view>
+		</div>
+      </div>
+     
+      <script type = "text/javascript">
+        const Default = { template: '<div class="element-italic">YOUR RELIABLE PARTNER IN SUPPLY OF RAW AND SEMI-RAW MATERIALS IN FOOD AND BEVERAGE INDUSTRY!</div>' }
+         const About = { template: '<div class="element">Smart Partner FZE is a successful supplying company in food and beverage industry. Solutions of Smart Partner FZE always oriented on customer’s demand and focused on cheap, fast delivery of industrial standard raw material and semi-raw materials used in food and beverage industry.<br>Cooperation with us will lead your production high competitive level in your industry! <p style="float:right">Abducelil OZDEMIR<br>President of Smart Partner FZE</p><div>' }
+         const Main = { template: '<div class="element-italic">YOUR RELIABLE PARTNER IN SUPPLY OF RAW AND SEMI-RAW MATERIALS IN FOOD AND BEVERAGE INDUSTRY!</div>' }
+         const Products = { template: '<div class="element"><ul><li><a href="#"><h2>Bottle caps</h2><img src="img/bcaps.jpg" class="product"></a></li><li><a href="#"><h2>Labels</h2><img src="img/labels.png" class="product"></a></li><li><a href="#"><h2>Preforms</h2><img src="img/preform.jpg" class="product"></a></li><li><a href="#"><h2>Preform bottles</h2><img src="img/preform-bottle.jpg" class="product"></a></li></div>' }
+         const Services = { template: '<div class="element">  We provide fast, flexible and on time services. Also we are open to meet your customized demands. Please, contact us for special terms </div>' }
+         const Contacts = { template: '<div class="element">Business Center ,Al shmookh Building,UAQ free trade zone ,Umm Al Quwain ,UAE. +905326663352. Smartcelal@gmail.com</div>' }
+         const routes = [
+            { path: '/', component: Default },
+            {path: '/about', component: About },
+            { path: '/main', component: Main },
+            { path: '/products', component: Products },
+            { path: '/services', component: Services },
+            { path: '/contacts', component: Contacts }
+
+         ];
+         const router = new VueRouter({
+            routes // short for `routes: routes`
+         });
+         var vm = new Vue({
+            el: '#app',
+            router
+         });
+      </script>
+  </body>
+</html>
